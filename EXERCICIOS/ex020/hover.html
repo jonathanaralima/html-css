@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {    /* quando colocamos > estamos dizendo que é um paragrafo neste caso né que pertênce é filho vamos assim dizer do div aqui neste caso. (o p é filho da div)*/
+            display: none;  /* este comando com none é para ocultar.*/
+        }
+        div:hover > p {    /*aqui estamos dando o comando de quando passar encima do texto do div vai aparecer o texto que esta escondido*/
+            display: block; /*aqui o block é para aparecer.*/
+            color: lavenderblush;
+            background-color: black;
+            width: 200px;
+        }
+        div:hover {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>FIM DO Exemplo</p>
+</body>
+</html>

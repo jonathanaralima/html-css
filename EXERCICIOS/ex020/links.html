@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: blue;
+            text-decoration: none; /*aqui é para tirar o sublinhado dos links usamos o (none)*/
+            font-weight: bold;
+        }
+        a:visited {    /*aqui é para quando o link for visitado colocamos outra cor usamos o color dentro dele né*/
+            color: brown;
+        }
+        a:hover {
+            color: black; /*aqui é a cor que a palavra vai ficar quando passar o cursor*/
+            text-decoration: underline; /*aqui quando eu passar o cursor na palavra ela vai ficar sublinhada*/
+        }
+        a:active {   /*é para quando eu clicar em um link por exemplo ai ele quando eu clico coloca a cor que eu especifiquei aqui enbaixo. Porém depois a cor do link volta ao normal*/
+            color: chartreuse;
+
+        }
+        a::before {  /*aqui é para colocar conteudo ou outra coisa antes before é pra colocar antes então vou colocar algo antes neste caso aqui da âncora*/
+            content: ' ⇒ ';
+        }
+        a::after {   /*aqui é o pseudo-elemento estamos falando depois do conteudo da âncora ai colocamos o que precisamos.*/
+            content: ' ⇐';  /*este content é conteudo ai colocamos dentro dele o que queremos escrever.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

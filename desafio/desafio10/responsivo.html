@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 260px; /* Este comando é minimo de px que queremos  neste caso no main deste site, colocamos 320 pois os celulares antigos em pé o maximo de px era 320. como colocamos margin e padding ai eu coloquei menos ainda para a página não ficar rolando.*/
+            max-width: 800px; /* E aqui logico é o maximo de px que queremos  do nosso conteudo neste caso do main.*/
+            margin: auto;
+        }
+        img {
+            width: 100%; /* Com esta comando e imagen vai se adptar tanto e tela pequena quanto a tela grande ele faz a mesma função do picture porém aqui não precisa de duas imagens só uma com este comando ele já adpta. eu achei assi melhor mais enfim.*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo facere, aliquam accusamus distinctio delectus quisquam ipsam provident reprehenderit architecto laborum ratione tempore suscipit enim quidem praesentium quod nam pariatur eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat amet repudiandae optio inventore voluptatem perferendis dicta ipsum temporibus sit veritatis eos exercitationem incidunt illo commodi in, corporis molestias? Qui, quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, harum odit optio facilis voluptas, quisquam, laborum commodi ratione tempore quo non atque consequatur! Laboriosam ipsa ut non unde ea ad.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo facere, aliquam accusamus distinctio delectus quisquam ipsam provident reprehenderit architecto laborum ratione tempore suscipit enim quidem praesentium quod nam pariatur eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat amet repudiandae optio inventore voluptatem perferendis dicta ipsum temporibus sit veritatis eos exercitationem incidunt illo commodi in, corporis molestias? Qui, quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, harum odit optio facilis voluptas, quisquam, laborum commodi ratione tempore quo non atque consequatur! Laboriosam ipsa ut non unde ea ad.</p>
+    </main>
+</body>
+</html>

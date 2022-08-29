@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            border: 20px solid transparent;
+            padding: 5px;
+            text-align: center;
+            border-image-source: url('borda.png'); /*este comando é para imortar minha borda personalizada*/
+            border-image-slice: 29; /*este comando é para fatiar (tipo espalhar a borda) e não precisa colocar o px*/
+            border-image-repeat: repeat; /*este tbm é outro comando que faz parte para espalhar nossa borda personalizada (repeat fica bem parecida com a borda que fizamos já o stretch fica esticado.*/
+            border-image: url('borda.png') 29 repeat; /* esta é a froma simplificada de escrever o código seguingo sempre a sequência acima.*?
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+</body>
+</html>
